@@ -12,6 +12,7 @@ protocol DynamicMenuDelegate {
     func selectScreen(segueID: String)
 }
 
+
 class DynamicMenu {
     
     var shapes        : [UIView] = []
@@ -23,9 +24,9 @@ class DynamicMenu {
     let data = Data()
     
     //MARK: - Menu Creation
-    func createMenu(displayView: UIView) {
+    func createMenu(displayView: UIView, menuType: Int) {
         addMotionDetection()
-        createShapes(displayView: displayView)
+        createShapes(displayView: displayView, menuType: menuType)
         createAnimator(displayView: displayView)
         animator.addBehaviors(items: shapes)
         createTimer(time: 0.1, shouldRepeat: true)
@@ -43,9 +44,9 @@ class DynamicMenu {
         motionManager.startAccelerometerUpdates()
     }
     
-    func createShapes(displayView: UIView) {
+    func createShapes(displayView: UIView, menuType: Int) {
         
-        for (key, info) in data.shapeArray.enumerated() {
+        for (key, info) in data.menuArray[menuType].enumerated() {
             
             let shape = Shape(frame: CGRect(x: info.frameX, y: info.frameY, width: info.frameWidth, height: info.frameHeight))
                 .title(info.title, font: info.font.rawValue, fontSize: info.fontSize, titleColor: info.titleColor)

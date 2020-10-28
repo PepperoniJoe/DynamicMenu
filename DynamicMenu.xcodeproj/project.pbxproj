@@ -24,6 +24,7 @@
 		933EF2D22549256700D1D09B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF2D12549256700D1D09B /* Enums.swift */; };
 		933EF2DA2549479500D1D09B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 933EF2D72549479500D1D09B /* LICENSE */; };
 		933EF2E2254951CE00D1D09B /* DynamicMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 933EF2E1254951CE00D1D09B /* DynamicMenu.png */; };
+		935D2EFA254A157600E2DA5A /* DynamicMenu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 935D2EF9254A157600E2DA5A /* DynamicMenu.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		933EF2D12549256700D1D09B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		933EF2D72549479500D1D09B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		933EF2E1254951CE00D1D09B /* DynamicMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DynamicMenu.png; sourceTree = "<group>"; };
+		935D2EF9254A157600E2DA5A /* DynamicMenu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DynamicMenu.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 		933EF2DF2549513B00D1D09B /* GitHub-Images */ = {
 			isa = PBXGroup;
 			children = (
+				935D2EF9254A157600E2DA5A /* DynamicMenu.gif */,
 				933EF2E1254951CE00D1D09B /* DynamicMenu.png */,
 			);
 			path = "GitHub-Images";
@@ -214,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				933EF28525460FE800D1D09B /* LaunchScreen.storyboard in Resources */,
+				935D2EFA254A157600E2DA5A /* DynamicMenu.gif in Resources */,
 				933EF28225460FE800D1D09B /* Assets.xcassets in Resources */,
 				933EF2E2254951CE00D1D09B /* DynamicMenu.png in Resources */,
 				933EF28025460FE600D1D09B /* Main.storyboard in Resources */,

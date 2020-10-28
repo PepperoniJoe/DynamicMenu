@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        menu.createMenu(displayView: view)
+        menu.createMenu(displayView: view, menuType: 0)
         menu.delegate = self
     }
     
