@@ -80,8 +80,8 @@
 		933EF27725460FE600D1D09B /* DynamicMenu */ = {
 			isa = PBXGroup;
 			children = (
-				933EF2B32547A4D200D1D09B /* Root */,
 				933EF2B92547B6A400D1D09B /* Constants */,
+				933EF2B32547A4D200D1D09B /* Root */,
 				933EF2B72547A5CA00D1D09B /* ViewControllers */,
 				933EF2B22547A4C600D1D09B /* Controllers */,
 				933EF2B52547A55900D1D09B /* Assets */,
