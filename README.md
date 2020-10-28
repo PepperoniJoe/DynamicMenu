@@ -6,11 +6,11 @@
 
 An example iOS14 app to demo a UIKit Dynamic use of physics for a moving menu
 
-<img src="GitHub-Images/DynamicMenu.gif" width="300">
+<img src="GitHub-Images/DynamicMenu.png" width="300">
 
 **Technical Info:** \
 Xcode 12 project written in Swift 5 for iOS 14\
-Swift, UIKit Dynamics\
+Swift, UIKit Dynamics
 
 **See Also:** \
 [Quickies - a variety of example iOS apps](https://github.com/PepperoniJoe/Quickies)\
