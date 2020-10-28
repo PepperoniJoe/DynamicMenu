@@ -24,7 +24,6 @@
 		933EF2D22549256700D1D09B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF2D12549256700D1D09B /* Enums.swift */; };
 		933EF2D92549479500D1D09B /* GitHub-Images in Resources */ = {isa = PBXBuildFile; fileRef = 933EF2D62549479500D1D09B /* GitHub-Images */; };
 		933EF2DA2549479500D1D09B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 933EF2D72549479500D1D09B /* LICENSE */; };
-		933EF2DB2549479500D1D09B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 933EF2D82549479500D1D09B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +46,6 @@
 		933EF2D12549256700D1D09B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		933EF2D62549479500D1D09B /* GitHub-Images */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GitHub-Images"; sourceTree = "<group>"; };
 		933EF2D72549479500D1D09B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		933EF2D82549479500D1D09B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +64,6 @@
 			children = (
 				933EF2D62549479500D1D09B /* GitHub-Images */,
 				933EF2D72549479500D1D09B /* LICENSE */,
-				933EF2D82549479500D1D09B /* README.md */,
 				933EF27725460FE600D1D09B /* DynamicMenu */,
 				933EF27625460FE600D1D09B /* Products */,
 			);
@@ -208,7 +205,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				933EF2DB2549479500D1D09B /* README.md in Resources */,
 				933EF28525460FE800D1D09B /* LaunchScreen.storyboard in Resources */,
 				933EF28225460FE800D1D09B /* Assets.xcassets in Resources */,
 				933EF28025460FE600D1D09B /* Main.storyboard in Resources */,
