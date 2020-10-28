@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://mit-license.org)
 
 An example iOS14 app to demo a UIKit Dynamic use of physics for a moving menu. 
-The menu freely moves as device is moved.\
+The menu freely moves as device is moved.
 
 <img src="GitHub-Images/DynamicMenu.png" width="300">
 
