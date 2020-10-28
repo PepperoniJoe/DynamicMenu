@@ -4,9 +4,10 @@
 [![Language](https://img.shields.io/badge/swift-iOS14-orange.svg)](https://developer.apple.com/xcode/swift)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](http://mit-license.org)
 
-An example iOS14 app to demo a UIKit Dynamic use of physics for a moving menu
+An example iOS14 app to demo a UIKit Dynamic use of physics for a moving menu. 
+The menu freely moves as device is moved.
 
-<img src="GitHub-Images/DynamicMenu.png" width="300">
+<img src="GitHub-Images/DynamicMenu.gif" width="300">
 
 **Technical Info:** \
 Xcode 12 project written in Swift 5 for iOS 14\
