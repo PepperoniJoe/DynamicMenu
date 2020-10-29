@@ -19,7 +19,7 @@ struct Data {
     let menuArray: [[(title: String, segue: String?, shape: ShapeType, font: Font, fontSize: CGFloat, titleColor: UIColor, shapeColor: UIColor, frameX: Int, frameY: Int, frameWidth: Int, frameHeight: Int, borderColor: UIColor, borderWidth: CGFloat)]] = [
         [
             ("Play",     K.one,   .circle,        .regular, 80, .label, #colorLiteral(red: 0.9366931319, green: 0.5399537086, blue: 0.6667494178, alpha: 1), 100, 100, 250, 250, .label, 0.0),
-            ("Sound",    nil,     .circle,        .bold,    40, .label, #colorLiteral(red: 0.4745098039, green: 0.8392156863, blue: 0.9764705882, alpha: 1), 0, 0, 150, 150,     .label, 0.0),
+            (" 🔈",    nil,     .circle,        .plain,    80, .label, #colorLiteral(red: 0.4745098039, green: 0.8392156863, blue: 0.9764705882, alpha: 1), 0, 0, 150, 150,     .label, 0.0),
             ("Settings", K.three, .roundedSquare, .regular, 35, .label, #colorLiteral(red : 0.721568644, green : 0.8862745166, blue : 0.5921568871, alpha : 1), 100, 0, 200, 80,    .label, 0.0),
             ("Friends",  K.four,  .circle,        .bold,    60, .label, #colorLiteral(red: 0.9764705896, green: 0.850980401, blue: 0.5490196347, alpha: 1), 0, 400, 280, 180,   .label, 0.0),
             ("Scores",   K.five,  .roundedSquare, .regular, 40, .label, #colorLiteral(red: 0.956412375, green: 0.6578175426, blue: 0.5438622832, alpha: 1), 200, 0, 180, 100,   .label, 0.0),
