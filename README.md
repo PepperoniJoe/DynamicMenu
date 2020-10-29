@@ -9,9 +9,13 @@ The menu freely moves as device is moved.
 
 <img src="GitHub-Images/DynamicMenu.gif" width="300">
 
+Menus can be varied by shape, color, border, font, size, background color and shadows. 
+
+<img src="GitHub-Images/menus.png" width="600">
+
 **Technical Info:** \
 Xcode 12 project written in Swift 5 for iOS 14\
-Swift, UIKit Dynamics
+Swift, UIKit Dynamics, Target Action, Storyboard. custom method chaining, AVFoundation
 
 **See Also:** \
 [Quickies - a variety of example iOS apps](https://github.com/PepperoniJoe/Quickies)\
