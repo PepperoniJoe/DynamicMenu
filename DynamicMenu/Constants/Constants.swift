@@ -8,8 +8,8 @@
 import UIKit
 
 //MARK: - Pick Desired Menu Style
-    let menuType = 0 // Corresponds to index number of menuArray
-
+//       SET menuType FOR MENU DESIGN
+    let menuType = 4 // Corresponds to index number of menuArray
 
 struct Data {
     
@@ -25,20 +25,20 @@ struct Data {
             ("Scores",   K.five,  .roundedSquare, .regular, 40, .label, #colorLiteral(red: 0.956412375, green: 0.6578175426, blue: 0.5438622832, alpha: 1), 200, 0, 180, 100,   .label, 0.0),
         ],
         [
-            ("Users",      K.one,   .circle, .regular, 60, .label, .systemBackground, 100, 100, 180, 100, .label, 1.0),
-            ("Tags",       K.two,   .circle, .bold,    40, .label, .systemBackground, 0, 0, 180, 100,     .label, 1.0),
-            ("Jobs",       K.three, .circle, .bold,    40, .label, .systemBackground, 100, 0, 180, 100,   .label, 1.0),
-            ("Companies",  K.four,  .circle, .bold,    25, .label, .systemBackground, 0, 400, 180, 100,   .label, 1.0),
-            ("Newest",     K.five,  .circle, .regular, 40, .label, .systemBackground, 0, 200, 180, 100,   .label, 1.0),
-            ("Active",     K.one,   .circle, .regular, 50, .label, .systemBackground, 100, 100, 180, 100, .label, 1.0),
-            ("Bountied",   K.two,   .circle, .bold,    25, .label, .systemBackground, 0, 0, 180, 100,     .label, 1.0),
-            ("Unanswered", K.three, .circle, .regular, 25, .label, .systemBackground, 100, 0, 180, 100,   .label, 1.0),
-            ("More",       K.four,  .circle, .bold,    50, .label, .systemBackground, 0, 400, 180, 100,   .label, 1.0),
-            ("Filter",     K.five,  .circle, .regular, 40, .label, .systemBackground, 0, 200, 180, 100,   .label, 1.0),
-            ("Products",   K.five,  .circle, .bold,    38, .label, .systemBackground, 0, 200, 180, 100,   .label, 1.0),
-            ("Teams",      K.five,  .circle, .regular, 40, .label, .systemBackground, 0, 200, 180, 100,   .label, 1.0),
-            ("Free Trial", K.five,  .circle, .regular, 25, .label, .systemBackground, 0, 200, 180, 100,   .label, 1.0),
-            ("Home",       K.five,  .circle, .regular, 40, .label, .systemBackground, 0, 200, 180, 100,   .label, 1.0),
+            ("Users",      K.one,   .circle, .regular, 60, .label, .systemBackground, 100, 100, 200, 100, .label, 1.0),
+            ("Tags",       K.two,   .circle, .bold,    40, .label, .systemBackground, 0, 0, 130, 60,     .label, 1.0),
+            ("Jobs",       K.three, .circle, .bold,    40, .label, .systemBackground, 100, 0, 130, 60,   .label, 1.0),
+            ("Companies",  K.four,  .circle, .bold,    25, .label, .systemBackground, 0, 400, 150, 60,   .label, 1.0),
+            ("Newest",     K.five,  .circle, .regular, 40, .label, .systemBackground, 0, 200, 180, 80,   .label, 1.0),
+            ("Active",     K.one,   .circle, .regular, 50, .label, .systemBackground, 100, 100, 180, 80, .label, 1.0),
+            ("Bountied",   K.two,   .circle, .bold,    25, .label, .systemBackground, 0, 0, 150, 80,     .label, 1.0),
+            ("Unanswered", K.three, .circle, .regular, 25, .label, .systemBackground, 100, 0, 180, 60,   .label, 1.0),
+            ("More",       K.four,  .circle, .bold,    50, .label, .systemBackground, 0, 400, 150, 80,   .label, 1.0),
+            ("Filter",     K.five,  .circle, .regular, 40, .label, .systemBackground, 0, 200, 150, 80,   .label, 1.0),
+            ("Products",   K.five,  .circle, .bold,    38, .label, .systemBackground, 0, 200, 180, 80,   .label, 1.0),
+            ("Teams",      K.five,  .circle, .regular, 40, .label, .systemBackground, 0, 200, 150, 80,   .label, 1.0),
+            ("Free Trial", K.five,  .circle, .regular, 25, .label, .systemBackground, 0, 200, 180, 60,   .label, 1.0),
+            ("Home",       K.five,  .circle, .regular, 40, .label, .systemBackground, 0, 200, 150, 80,   .label, 1.0),
         ],
         [
             ("Order Now",    K.one,   .square, .regular, 30, .label, #colorLiteral(red: 0.8549019694, green: 0.250980407, blue: 0.4784313738, alpha: 1), 100, 100, 175, 80, .label, 0.0),
@@ -74,24 +74,24 @@ struct Data {
             ("Help and Settings", K.two,   .roundedSquare, .regular, 20, .systemBackground, #colorLiteral(red: 0.3411764801, green: 0.6235294342, blue: 0.1686274558, alpha: 1), 0, 0, 250, 50, .label, 1.0),
         ],
         [
-            ("Lemon", K.four, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 0.9317476455), 100, 100, 120, 120, .white, 2.0),
-            ("Lemon", K.four, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 0.9317476455), 100, 100, 120, 120, .white, 2.0),
-            ("Lime", K.three, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.3790850262, green: 0.679406655, blue: 0.2013752477, alpha: 0.78125), 0, 0, 120, 120,  .white, 2.0),
-            ("Cherry", K.one, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.6784736889, green: 0.1388022762, blue: 0.0687624826, alpha: 0.8571008134), 100, 0, 120, 120,   .white, 2.0),
-            ("Grape", K.two, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.3478851828, green: 0.3075663227, blue: 0.9589628831, alpha: 0.8389875856), 0, 400, 120, 120, .white, 2.0),
-            ("Berry", K.two, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.2136861014, green: 0.5766190101, blue: 0.7934070172, alpha: 0.7623608733), 200, 0, 120, 120,   .white, 2.0),
-            ("Orange", K.one, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.9332630431, green: 0.4008268866, blue: 0.09215667306, alpha: 0.8939693921), 100, 100, 120, 120, .white, 2.0),
-            ("Cherry", K.one, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.6784736889, green: 0.1388022762, blue: 0.0687624826, alpha: 0.8571008134), 100, 0, 120, 120,   .white, 2.0),
-            ("Grape", K.two, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.3478851828, green: 0.3075663227, blue: 0.9589628831, alpha: 0.8389875856), 0, 400, 120, 120, .white, 2.0),
-            ("Berry", K.two, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.2136861014, green: 0.5766190101, blue: 0.7934070172, alpha: 0.7623608733), 200, 0, 120, 120,   .white, 2.0),
-            ("Orange", K.one, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565),#colorLiteral(red: 0.9332630431, green: 0.4008268866, blue: 0.09215667306, alpha: 0.8939693921), 100, 100, 120, 120, .white, 2.0),
-            ("Lemon", K.four, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 0.9317476455), 100, 100, 120, 120, .white, 2.0),
-            ("Lime", K.three, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.3790850262, green: 0.679406655, blue: 0.2013752477, alpha: 0.78125), 0, 0, 120, 120,  .white, 2.0),
-            ("Lime", K.three, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.3790850262, green: 0.679406655, blue: 0.2013752477, alpha: 0.78125), 0, 0, 120, 120,  .white, 2.0),
-            ("Cherry", K.one, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.6784736889, green: 0.1388022762, blue: 0.0687624826, alpha: 0.8571008134), 100, 0, 120, 120,   .white, 2.0),
-            ("Grape", K.two, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.3478851828, green: 0.3075663227, blue: 0.9589628831, alpha: 0.8389875856), 0, 400, 120, 120, .white, 2.0),
-            ("Berry", K.two, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.2136861014, green: 0.5766190101, blue: 0.7934070172, alpha: 0.7623608733), 200, 0, 120, 120,   .white, 2.0),
-            ("Orange", K.one, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565),#colorLiteral(red: 0.9332630431, green: 0.4008268866, blue: 0.09215667306, alpha: 0.8939693921), 100, 100, 120, 120, .white, 2.0),
+            ("Lemon",  K.four,  .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1), 100, 100, 120, 120, .white, 2.0),
+            ("Lemon",  K.four,  .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1), 100, 100, 120, 120, .white, 2.0),
+            ("Lime",   K.three, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.3790850262, green: 0.679406655, blue: 0.2013752477, alpha: 1), 0, 0, 120, 120,     .white, 2.0),
+            ("Cherry", K.one,   .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.6784736889, green: 0.1388022762, blue: 0.0687624826, alpha: 1), 100, 0, 120, 120,   .white, 2.0),
+            ("Grape",  K.two,   .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.3478851828, green: 0.3075663227, blue: 0.9589628831, alpha: 1), 0, 400, 120, 120,   .white, 2.0),
+            ("Berry",  K.two,   .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.2136861014, green: 0.5766190101, blue: 0.7934070172, alpha: 1), 200, 0, 120, 120,   .white, 2.0),
+            ("Orange", K.one,   .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.9332630431, green: 0.4008268866, blue: 0.09215667306, alpha: 1), 100, 100, 120, 120, .white, 2.0),
+            ("Cherry", K.one,   .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.6784736889, green: 0.1388022762, blue: 0.0687624826, alpha: 1), 100, 0, 120, 120,   .white, 2.0),
+            ("Grape",  K.two,   .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.3478851828, green: 0.3075663227, blue: 0.9589628831, alpha: 1), 0, 400, 120, 120,   .white, 2.0),
+            ("Berry",  K.two,   .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.2136861014, green: 0.5766190101, blue: 0.7934070172, alpha: 1), 200, 0, 120, 120,   .white, 2.0),
+            ("Orange", K.one,   .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.9332630431, green: 0.4008268866, blue: 0.09215667306, alpha: 1), 100, 100, 120, 120, .white, 2.0),
+            ("Lemon",  K.four,  .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.9529411793, green: 0.6862745285, blue: 0.1333333403, alpha: 1), 100, 100, 120, 120, .white, 2.0),
+            ("Lime",   K.three, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.3790850262, green: 0.679406655, blue: 0.2013752477, alpha: 1), 0, 0, 120, 120,     .white, 2.0),
+            ("Lime",   K.three, .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.3790850262, green: 0.679406655, blue: 0.2013752477, alpha: 1), 0, 0, 120, 120,     .white, 2.0),
+            ("Cherry", K.one,   .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.6784736889, green: 0.1388022762, blue: 0.0687624826, alpha: 1), 100, 0, 120, 120,   .white, 2.0),
+            ("Grape",  K.two,   .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.3478851828, green: 0.3075663227, blue: 0.9589628831, alpha: 1), 0, 400, 120, 120,   .white, 2.0),
+            ("Berry",  K.two,   .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.2136861014, green: 0.5766190101, blue: 0.7934070172, alpha: 1), 200, 0, 120, 120,   .white, 2.0),
+            ("Orange", K.one,   .circle, .funky, 25, #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.8401380565), #colorLiteral(red: 0.9332630431, green: 0.4008268866, blue: 0.09215667306, alpha: 1), 100, 100, 120, 120, .white, 2.0),
         ],
     ]
 }

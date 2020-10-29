@@ -32,17 +32,18 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let buttonTitle = (sender as? Shape)?.titleLabel?.text {
-            segue.destination.title = buttonTitle
+        if let button = sender as? Shape {
+            segue.destination.title = button.titleLabel?.text
+            segue.destination.view.backgroundColor = button.backgroundColor
         }
     }
 }  // end of ViewController
 
 
 extension ViewController: DynamicMenuDelegate {
-    func selectScreen(segue: String?) {
+    func selectScreen(segue: String?, sender: Shape) {
         if let segue = segue {
-            performSegue(withIdentifier: segue, sender: nil)
+            performSegue(withIdentifier: segue, sender: sender)
         }
     }
 }

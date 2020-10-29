@@ -9,7 +9,7 @@ import UIKit
 import CoreMotion
 
 protocol DynamicMenuDelegate {
-    func selectScreen(segue: String?)
+    func selectScreen(segue: String?, sender: Shape)
 }
 
 class DynamicMenu {
@@ -72,11 +72,11 @@ class DynamicMenu {
         if buttonType == nil {
             isSoundOn = !isSoundOn
             let sound = isSoundOn ? " 🔊" : " 🔈"
-            sender.title( sound , font: Font.plain.rawValue, fontSize: 80, titleColor: UIColor.white)
+            _ = sender.title( sound , font: Font.plain.rawValue, fontSize: 80, titleColor: UIColor.white)
             animator.isSoundOn = isSoundOn
         } else {
             disappear()
-            delegate?.selectScreen(segue: buttonType)
+            delegate?.selectScreen(segue: buttonType, sender: sender)
         }
     }
     
