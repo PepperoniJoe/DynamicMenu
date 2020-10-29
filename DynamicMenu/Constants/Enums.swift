@@ -16,6 +16,7 @@ enum ShapeType {
 enum Font: String {
     case regular = "AmericanTypewriter" 
     case bold = "BanglaSangamMN-Bold"
+    case funky = "Optima-ExtraBlack"
     
     func of(size: CGFloat) -> UIFont? {
         return UIFont(name: rawValue, size: size)

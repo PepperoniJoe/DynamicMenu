@@ -28,16 +28,16 @@ class DynamicMenu {
         self.menuType = menuType
         addMotionDetection()
         createShapes(displayView: displayView, menuType: menuType)
-        createAnimator(displayView: displayView)
+        createAnimator(displayView: displayView, backgroundColor: data.bgColor)
         animator.addBehaviors(items: shapes)
         createTimer(time: 0.1, shouldRepeat: true)
     }
     
     //MARK: - SET UP
     
-    func createAnimator(displayView: UIView) {
+    func createAnimator(displayView: UIView, backgroundColor: UIColor ) {
         animator = Animator(referenceView: displayView)
-        animator.referenceView?.backgroundColor = .systemBackground
+        animator.referenceView?.backgroundColor = backgroundColor
     }
     
     func addMotionDetection() {
@@ -52,6 +52,7 @@ class DynamicMenu {
             let shape = Shape(frame: CGRect(x: info.frameX, y: info.frameY, width: info.frameWidth, height: info.frameHeight))
                 .title(info.title, font: info.font.rawValue, fontSize: info.fontSize, titleColor: info.titleColor)
                 .shape(info.shape)
+                .shadow(data.isShadowOn)
                 .color(info.shapeColor)
                 .borderColor(info.borderColor, width: info.borderWidth)
                 .segue(info.segue)
@@ -76,7 +77,6 @@ class DynamicMenu {
             delegate?.selectScreen(segue: buttonType)
         }
     }
-    
     
     
     //MARK: - Timer methods to move shapes

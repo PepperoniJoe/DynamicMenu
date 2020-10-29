@@ -42,6 +42,17 @@ class Shape: UIButton {
         return self
     }
     
+    func shadow(_ isOn: Bool) -> Self {
+        if isOn == true {
+            clipsToBounds       = false
+            layer.shadowColor   = UIColor.black.cgColor
+            let height          = CGFloat.random(in     : (0.0 ... 15.0))
+            layer.shadowOffset  = CGSize(width : 0.0, height : height)
+            layer.shadowOpacity = 0.6
+        }
+        return self
+    }
+    
     func title(_ title: String, font: String, fontSize: CGFloat, titleColor: UIColor) -> Self {
         
         titleLabel?.frame = CGRect(x     : 0,
