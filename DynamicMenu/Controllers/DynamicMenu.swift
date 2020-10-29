@@ -9,9 +9,8 @@ import UIKit
 import CoreMotion
 
 protocol DynamicMenuDelegate {
-    func selectScreen(segueID: String)
+    func selectScreen(segue: String?)
 }
-
 
 class DynamicMenu {
     
@@ -22,9 +21,11 @@ class DynamicMenu {
     var isSoundOn     : Bool = false
     var delegate      : DynamicMenuDelegate?
     let data = Data()
+    var menuType = 0
     
     //MARK: - Menu Creation
     func createMenu(displayView: UIView, menuType: Int) {
+        self.menuType = menuType
         addMotionDetection()
         createShapes(displayView: displayView, menuType: menuType)
         createAnimator(displayView: displayView)
@@ -53,6 +54,7 @@ class DynamicMenu {
                 .shape(info.shape)
                 .color(info.shapeColor)
                 .borderColor(info.borderColor, width: info.borderWidth)
+                .segue(info.segue)
                 .tag(key)
             
             shape.addTarget(self, action: #selector(selectButton(sender:)), for: .touchUpInside)
@@ -65,16 +67,16 @@ class DynamicMenu {
     //MARK: - Button actions
     
     @objc func selectButton(sender: Shape) {
-        if let buttonType = data.shapeDict[sender.tag] {
-            if buttonType == K.sound {
-                isSoundOn = !isSoundOn
-                animator.isSoundOn = isSoundOn
-            } else {
-                disappear()
-                delegate?.selectScreen(segueID: buttonType)
-            }
+        let buttonType = data.menuArray[menuType][sender.tag].segue
+        if buttonType == nil {
+            isSoundOn = !isSoundOn
+            animator.isSoundOn = isSoundOn
+        } else {
+            disappear()
+            delegate?.selectScreen(segue: buttonType)
         }
     }
+    
     
     
     //MARK: - Timer methods to move shapes

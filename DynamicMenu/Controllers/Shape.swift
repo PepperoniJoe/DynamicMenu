@@ -9,6 +9,8 @@ import UIKit
 
 class Shape: UIButton {
     
+    var segue: String?
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
@@ -52,6 +54,11 @@ class Shape: UIButton {
         titleLabel?.textAlignment = .center
         contentVerticalAlignment = .center
         titleLabel?.font = UIFont(name: font, size: fontSize)
+        return self
+    }
+    
+    func segue(_ segue: String?) -> Self {
+        self.segue = segue
         return self
     }
     

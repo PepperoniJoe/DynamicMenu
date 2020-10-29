@@ -8,37 +8,37 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Top Scores-->
+        <!--Five View Controller-->
         <scene sceneID="n6p-0F-rFm">
             <objects>
-                <viewController storyboardIdentifier="Scores" id="hl8-xf-O8M" customClass="ScoresViewController" customModule="DynamicMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Scores" id="hl8-xf-O8M" customClass="FiveViewController" customModule="DynamicMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" restorationIdentifier="scores" id="k5B-yW-XuO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="hxp-id-XoQ"/>
                         <color key="backgroundColor" red="0.95641237499999998" green="0.65781754260000003" blue="0.54386228319999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Top Scores" id="YB2-VQ-sfz"/>
+                    <navigationItem key="navigationItem" id="YB2-VQ-sfz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FDg-2E-k8s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="352" y="834"/>
+            <point key="canvasLocation" x="371" y="848"/>
         </scene>
-        <!--Friends-->
+        <!--Four View Controller-->
         <scene sceneID="wCW-yu-2zC">
             <objects>
-                <viewController storyboardIdentifier="Friends" id="Oyg-z2-rNH" customClass="FriendsViewController" customModule="DynamicMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Friends" id="Oyg-z2-rNH" customClass="FourViewController" customModule="DynamicMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c0I-8K-uvv">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="USh-U2-VZd"/>
                         <color key="backgroundColor" red="0.97750693560000002" green="0.85218960050000003" blue="0.54765242339999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Friends" id="Mc3-4p-Ol0"/>
+                    <navigationItem key="navigationItem" id="Mc3-4p-Ol0"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hp5-c6-6fs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1409" y="853"/>
+            <point key="canvasLocation" x="1109" y="881"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -60,47 +60,64 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="8Cw-Xk-0QO"/>
                     </navigationItem>
                     <connections>
-                        <segue destination="Ifj-Tq-WyL" kind="show" identifier="Settings" id="pAP-MQ-NjI"/>
-                        <segue destination="Oyg-z2-rNH" kind="show" identifier="Friends" id="IM4-xz-gWz"/>
-                        <segue destination="hl8-xf-O8M" kind="show" identifier="Scores" id="NVK-Jl-gZV"/>
-                        <segue destination="TIA-Cp-his" kind="show" identifier="Play" id="ymm-e5-1ch"/>
+                        <segue destination="Ifj-Tq-WyL" kind="show" identifier="Three" id="pAP-MQ-NjI"/>
+                        <segue destination="Oyg-z2-rNH" kind="show" identifier="Four" id="IM4-xz-gWz"/>
+                        <segue destination="hl8-xf-O8M" kind="show" identifier="Five" id="NVK-Jl-gZV"/>
+                        <segue destination="TIA-Cp-his" kind="show" identifier="One" id="ymm-e5-1ch"/>
+                        <segue destination="Sq5-ng-C5y" kind="show" identifier="Two" id="cjc-IL-ORm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1026.0869565217392" y="71.651785714285708"/>
         </scene>
-        <!--Play-->
+        <!--One View Controller-->
         <scene sceneID="17P-2B-fsN">
             <objects>
-                <viewController storyboardIdentifier="Play" id="TIA-Cp-his" customClass="PlayViewController" customModule="DynamicMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Play" id="TIA-Cp-his" customClass="OneViewController" customModule="DynamicMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dIn-Mz-wvZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Yn1-Lv-tJ4"/>
                         <color key="backgroundColor" red="0.90997076030000001" green="0.4790058136" blue="0.64154267310000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Play" id="Rjg-dr-xKU"/>
+                    <navigationItem key="navigationItem" id="Rjg-dr-xKU"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EjS-df-eX2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2170" y="-141"/>
         </scene>
-        <!--Settings-->
+        <!--Two View Controller-->
+        <scene sceneID="ESI-Ag-RtN">
+            <objects>
+                <viewController id="Sq5-ng-C5y" customClass="TwoViewController" customModule="DynamicMenu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9jf-tF-hmg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Txi-vz-B5M"/>
+                        <color key="backgroundColor" red="0.47450980392156861" green="0.83921568627450982" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="kku-fZ-PdD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaF-lp-ZYN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2980" y="285"/>
+        </scene>
+        <!--Three View Controller-->
         <scene sceneID="3u8-L7-MiP">
             <objects>
-                <viewController storyboardIdentifier="Settings" id="Ifj-Tq-WyL" customClass="SettingsViewController" customModule="DynamicMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Settings" id="Ifj-Tq-WyL" customClass="ThreeViewController" customModule="DynamicMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="H2W-uB-F6m">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="UNY-2S-6eP"/>
                         <color key="backgroundColor" red="0.72122395039999998" green="0.88589185479999999" blue="0.59022617340000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Settings" id="B3Z-1B-hdu"/>
+                    <navigationItem key="navigationItem" id="B3Z-1B-hdu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWC-Fp-n5L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2170" y="552"/>
+            <point key="canvasLocation" x="2313" y="781"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h6w-Pg-oBX">

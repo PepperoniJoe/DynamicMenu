@@ -10,11 +10,13 @@ import CoreMotion
 
 class ViewController: UIViewController {
     
+    let menuType = 1 // pick menu desired
+    
     var menu = DynamicMenu()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        menu.createMenu(displayView: view, menuType: 0)
+        menu.createMenu(displayView: view, menuType: menuType)
         menu.delegate = self
     }
     
@@ -30,12 +32,20 @@ class ViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
         menu.disappear()
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let buttonTitle = (sender as? Shape)?.titleLabel?.text {
+            segue.destination.title = buttonTitle
+        }
+    }
 }  // end of ViewController
 
 
 extension ViewController: DynamicMenuDelegate {
-    func selectScreen(segueID: String) {
-        performSegue(withIdentifier: segueID, sender: nil)
+    func selectScreen(segue: String?) {
+        if let segue = segue {
+            performSegue(withIdentifier: segue, sender: nil)
+        }
     }
 }
 

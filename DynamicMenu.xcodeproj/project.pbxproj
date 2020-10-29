@@ -14,17 +14,18 @@
 		933EF28225460FE800D1D09B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933EF28125460FE800D1D09B /* Assets.xcassets */; };
 		933EF28525460FE800D1D09B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933EF28325460FE800D1D09B /* LaunchScreen.storyboard */; };
 		933EF2922546739000D1D09B /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF2912546739000D1D09B /* Shape.swift */; };
-		933EF2B02547A4B700D1D09B /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF2AF2547A4B700D1D09B /* PlayViewController.swift */; };
 		933EF2BD2547B6D700D1D09B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF2BC2547B6D700D1D09B /* Constants.swift */; };
-		933EF2C12547C52600D1D09B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF2C02547C52600D1D09B /* SettingsViewController.swift */; };
-		933EF2C42547C53700D1D09B /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF2C32547C53700D1D09B /* FriendsViewController.swift */; };
-		933EF2C72547C54700D1D09B /* ScoresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF2C62547C54700D1D09B /* ScoresViewController.swift */; };
 		933EF2CB2548F89C00D1D09B /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF2CA2548F89C00D1D09B /* Animator.swift */; };
 		933EF2CE254912C900D1D09B /* DynamicMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF2CD254912C900D1D09B /* DynamicMenu.swift */; };
 		933EF2D22549256700D1D09B /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF2D12549256700D1D09B /* Enums.swift */; };
 		933EF2DA2549479500D1D09B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 933EF2D72549479500D1D09B /* LICENSE */; };
 		933EF2E2254951CE00D1D09B /* DynamicMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 933EF2E1254951CE00D1D09B /* DynamicMenu.png */; };
 		935D2EFA254A157600E2DA5A /* DynamicMenu.gif in Resources */ = {isa = PBXBuildFile; fileRef = 935D2EF9254A157600E2DA5A /* DynamicMenu.gif */; };
+		935D2EFD254A537500E2DA5A /* OneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D2EFC254A537500E2DA5A /* OneViewController.swift */; };
+		935D2F00254A539800E2DA5A /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D2EFF254A539800E2DA5A /* TwoViewController.swift */; };
+		935D2F07254A53E300E2DA5A /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D2F06254A53E300E2DA5A /* ThreeViewController.swift */; };
+		935D2F0A254A541B00E2DA5A /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D2F09254A541B00E2DA5A /* FourViewController.swift */; };
+		935D2F0D254A545300E2DA5A /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D2F0C254A545300E2DA5A /* FiveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,17 +38,18 @@
 		933EF28425460FE800D1D09B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		933EF28625460FE800D1D09B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		933EF2912546739000D1D09B /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
-		933EF2AF2547A4B700D1D09B /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		933EF2BC2547B6D700D1D09B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		933EF2C02547C52600D1D09B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		933EF2C32547C53700D1D09B /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
-		933EF2C62547C54700D1D09B /* ScoresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresViewController.swift; sourceTree = "<group>"; };
 		933EF2CA2548F89C00D1D09B /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		933EF2CD254912C900D1D09B /* DynamicMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicMenu.swift; sourceTree = "<group>"; };
 		933EF2D12549256700D1D09B /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		933EF2D72549479500D1D09B /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		933EF2E1254951CE00D1D09B /* DynamicMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DynamicMenu.png; sourceTree = "<group>"; };
 		935D2EF9254A157600E2DA5A /* DynamicMenu.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DynamicMenu.gif; sourceTree = "<group>"; };
+		935D2EFC254A537500E2DA5A /* OneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneViewController.swift; sourceTree = "<group>"; };
+		935D2EFF254A539800E2DA5A /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		935D2F06254A53E300E2DA5A /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		935D2F09254A541B00E2DA5A /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
+		935D2F0C254A545300E2DA5A /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,10 +135,11 @@
 			isa = PBXGroup;
 			children = (
 				933EF27C25460FE600D1D09B /* ViewController.swift */,
-				933EF2AF2547A4B700D1D09B /* PlayViewController.swift */,
-				933EF2C02547C52600D1D09B /* SettingsViewController.swift */,
-				933EF2C32547C53700D1D09B /* FriendsViewController.swift */,
-				933EF2C62547C54700D1D09B /* ScoresViewController.swift */,
+				935D2EFC254A537500E2DA5A /* OneViewController.swift */,
+				935D2EFF254A539800E2DA5A /* TwoViewController.swift */,
+				935D2F06254A53E300E2DA5A /* ThreeViewController.swift */,
+				935D2F09254A541B00E2DA5A /* FourViewController.swift */,
+				935D2F0C254A545300E2DA5A /* FiveViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -233,17 +236,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				933EF27D25460FE600D1D09B /* ViewController.swift in Sources */,
-				933EF2C72547C54700D1D09B /* ScoresViewController.swift in Sources */,
-				933EF2C42547C53700D1D09B /* FriendsViewController.swift in Sources */,
+				935D2F0D254A545300E2DA5A /* FiveViewController.swift in Sources */,
 				933EF27925460FE600D1D09B /* AppDelegate.swift in Sources */,
 				933EF27B25460FE600D1D09B /* SceneDelegate.swift in Sources */,
 				933EF2BD2547B6D700D1D09B /* Constants.swift in Sources */,
-				933EF2B02547A4B700D1D09B /* PlayViewController.swift in Sources */,
 				933EF2922546739000D1D09B /* Shape.swift in Sources */,
 				933EF2CB2548F89C00D1D09B /* Animator.swift in Sources */,
+				935D2F07254A53E300E2DA5A /* ThreeViewController.swift in Sources */,
 				933EF2CE254912C900D1D09B /* DynamicMenu.swift in Sources */,
+				935D2EFD254A537500E2DA5A /* OneViewController.swift in Sources */,
+				935D2F00254A539800E2DA5A /* TwoViewController.swift in Sources */,
 				933EF2D22549256700D1D09B /* Enums.swift in Sources */,
-				933EF2C12547C52600D1D09B /* SettingsViewController.swift in Sources */,
+				935D2F0A254A541B00E2DA5A /* FourViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
