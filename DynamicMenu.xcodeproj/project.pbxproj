@@ -26,6 +26,7 @@
 		935D2F07254A53E300E2DA5A /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D2F06254A53E300E2DA5A /* ThreeViewController.swift */; };
 		935D2F0A254A541B00E2DA5A /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D2F09254A541B00E2DA5A /* FourViewController.swift */; };
 		935D2F0D254A545300E2DA5A /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 935D2F0C254A545300E2DA5A /* FiveViewController.swift */; };
+		935D2F11254AA41800E2DA5A /* Menus.png in Resources */ = {isa = PBXBuildFile; fileRef = 935D2F10254AA41800E2DA5A /* Menus.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		935D2F06254A53E300E2DA5A /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
 		935D2F09254A541B00E2DA5A /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
 		935D2F0C254A545300E2DA5A /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
+		935D2F10254AA41800E2DA5A /* Menus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menus.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				935D2EF9254A157600E2DA5A /* DynamicMenu.gif */,
+				935D2F10254AA41800E2DA5A /* Menus.png */,
 				933EF2E1254951CE00D1D09B /* DynamicMenu.png */,
 			);
 			path = "GitHub-Images";
@@ -219,6 +222,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				935D2F11254AA41800E2DA5A /* Menus.png in Resources */,
 				933EF28525460FE800D1D09B /* LaunchScreen.storyboard in Resources */,
 				935D2EFA254A157600E2DA5A /* DynamicMenu.gif in Resources */,
 				933EF28225460FE800D1D09B /* Assets.xcassets in Resources */,

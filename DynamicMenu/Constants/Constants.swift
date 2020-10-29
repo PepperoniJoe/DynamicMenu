@@ -8,13 +8,13 @@
 import UIKit
 
 //MARK: - Pick Desired Menu Style
-    let menuType = 4 // Corresponds to index number of menuArray
+    let menuType = 0 // Corresponds to index number of menuArray
 
 
 struct Data {
     
-    let bgColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
-    let isShadowOn = false
+    let bgColor: UIColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+    let isShadowOn = true
     
     let menuArray: [[(title: String, segue: String?, shape: ShapeType, font: Font, fontSize: CGFloat, titleColor: UIColor, shapeColor: UIColor, frameX: Int, frameY: Int, frameWidth: Int, frameHeight: Int, borderColor: UIColor, borderWidth: CGFloat)]] = [
         [
