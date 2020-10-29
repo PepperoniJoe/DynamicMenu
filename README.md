@@ -11,7 +11,7 @@ The menu freely moves as device is moved.
 
 Menus can be varied by shape, color, border, font, size, background color and shadows. 
 
-<img src="GitHub-Images/menus.png" width="600">
+<img src="GitHub-Images/Menus.png" width="600">
 
 **Technical Info:** \
 Xcode 12 project written in Swift 5 for iOS 14\
