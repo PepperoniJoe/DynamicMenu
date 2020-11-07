@@ -52,7 +52,7 @@ class DynamicMenu {
             let shape = Shape(frame: CGRect(x: info.frameX, y: info.frameY, width: info.frameWidth, height: info.frameHeight))
                 .title(info.title, font: info.font.rawValue, fontSize: info.fontSize, titleColor: info.titleColor)
                 .shape(info.shape)
-                .shadow(data.isShadowOn)
+                .shadow(data.shadow, isOn: data.isShadowOn)
                 .color(info.shapeColor)
                 .borderColor(info.borderColor, width: info.borderWidth)
                 .segue(info.segue)
