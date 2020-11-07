@@ -9,7 +9,7 @@ import UIKit
 
 class Shape: UIButton {
     
-    var segue: String?
+    private var segue: String?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -46,8 +46,7 @@ class Shape: UIButton {
         if isOn == true {
             clipsToBounds       = false
             layer.shadowColor   = UIColor.black.cgColor
-          //  let height          = shadow // CGFloat.random(in     : (0.0 ... 15.0))
-        layer.shadowOffset  = CGSize(width : 0.0, height : shadowHeight)
+            layer.shadowOffset  = CGSize(width : 0.0, height : shadowHeight)
             layer.shadowOpacity = 0.6
         }
         return self

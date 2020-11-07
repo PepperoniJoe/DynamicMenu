@@ -71,8 +71,8 @@ class DynamicMenu {
         let buttonType = data.menuArray[menuType][sender.tag].segue
         if buttonType == nil {
             isSoundOn = !isSoundOn
-            let sound = isSoundOn ? " 🔊" : " 🔈"
-            _ = sender.title( sound , font: Font.plain.rawValue, fontSize: 80, titleColor: UIColor.white)
+            let sound = isSoundOn ? " 🔊 " : " 🔈 "
+            _ = sender.title( sound , font: Font.plain.rawValue, fontSize: 50, titleColor: UIColor.white)
             animator.isSoundOn = isSoundOn
         } else {
             disappear()

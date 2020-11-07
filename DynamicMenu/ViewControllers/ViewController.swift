@@ -10,7 +10,7 @@ import CoreMotion
 
 class ViewController: UIViewController {
     
-    var menu = DynamicMenu()
+    private var menu = DynamicMenu()
     
     override func viewDidLoad() {
         super.viewDidLoad()

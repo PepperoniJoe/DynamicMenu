@@ -18,10 +18,6 @@ enum Font: String {
     case bold    = "BanglaSangamMN-Bold"
     case funky   = "Optima-ExtraBlack"
     case plain   = "Helvetica"
-    
-//    func of(size: CGFloat) -> UIFont? {
-//        return UIFont(name: rawValue, size: size)
-//    }
 }
 
 
