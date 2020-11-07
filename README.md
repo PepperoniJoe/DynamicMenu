@@ -15,6 +15,10 @@ Menus can be varied by shape, color, border, font, size, background color and sh
 
 Menus are generated from data contained in an array. Each menu item segues to a corresponding view controller of the same name and color.
 
+<img src="GitHub-Images/DynamicMenu2.gif" width="300">
+
+Tap on a shape to access the corresponding view controller.
+
 **Technical Info:** \
 Xcode 12 project written in Swift 5 for iOS 14\
 Swift, UIKit Dynamics, Target Action, Storyboard. custom method chaining, AVFoundation
