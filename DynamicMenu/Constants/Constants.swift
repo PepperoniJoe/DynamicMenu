@@ -9,16 +9,24 @@ import UIKit
 
 //MARK: - Pick Desired Menu Style
 //       SET menuType FOR MENU DESIGN
-    let menuType = 6 // Corresponds to index number of menuArray
+    let menuType = 0 // Corresponds to index number of menuArray
 
 struct Data {
     
-    let bgColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+    let bgColor: UIColor = #colorLiteral(red: 0.9775069356, green: 0.8521896005, blue: 0.5476524234, alpha: 1)
     let isShadowOn      = false
     let shadow: CGFloat = 0.0
     
     let menuArray: [[(title: String, segue: String?, shape: ShapeType, imageName: String?, font: Font, fontSize: CGFloat, titleColor: UIColor, shapeColor: UIColor, frameX: Int, frameY: Int, frameWidth: Int, frameHeight: Int, borderColor: UIColor, borderWidth: CGFloat)]] = [
         [
+            ("Supplies", K.one, .circle, nil, .regular, 40, .label, .systemBackground, 10, 0, 220, 60, .label, 1.0),
+            ("Treats",       K.two, .circle, nil, .bold,    40, .label, .systemBackground, 0, 0, 140, 140,     .label, 1.0),
+            ("Food",         K.three, .circle, nil, .plain,    60, .label, .systemBackground, 100, 100, 150, 150,   .label, 1.0),
+            ("Toys",         K.four, .circle, nil, .bold,    45, .label, .systemBackground, 0, 400, 110, 110,   .label, 1.0),
+            ("Carriers",     K.four, .circle, nil, .regular,    40, .label, .systemBackground, 0, 400, 200, 90,   .label, 1.0),
+            ("Litter", K.four, .circle, nil, .regular,    50, .label, .systemBackground, 0, 400, 220, 80,   .label, 1.0),
+            ("Beds/Towers",     K.four, .circle, nil, .plain,    25, .label, .systemBackground, 0, 400, 200, 60,   .label, 1.0),
+            ("Flea and Tick",     K.four, .circle, nil, .regular,    25, .label, .systemBackground, 50, 50, 200, 60,   .label, 1.0),
             ("Cat Songs",    K.one, .image,  "Cat1", .plain, 12, .label, #colorLiteral(red: 0.6546350121, green: 0.4760367274, blue: 0.5770899057, alpha: 1), 0, 400, 106, 154, .label, 0.0),
             ("Cat Poems",    K.one, .image,  "Cat2", .plain, 12, .label, #colorLiteral(red: 0.9770404696, green: 0.4807606339, blue: 0.460550487, alpha: 1), 0, 160, 119, 131, .label, 0.0),
             ("Cat Drawings", K.one, .image,  "Cat3", .plain, 12, .label, #colorLiteral(red: 0.5610517859, green: 0.546002686, blue: 0, alpha: 1), 200, 160, 119, 131, .label, 0.0),

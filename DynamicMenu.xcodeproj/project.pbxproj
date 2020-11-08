@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9313995C2557B5EA0090061A /* Menus.png in Resources */ = {isa = PBXBuildFile; fileRef = 9313995B2557B5EA0090061A /* Menus.png */; };
+		931399612557C3E50090061A /* Menus.png in Resources */ = {isa = PBXBuildFile; fileRef = 931399602557C3E50090061A /* Menus.png */; };
 		933EF27925460FE600D1D09B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF27825460FE600D1D09B /* AppDelegate.swift */; };
 		933EF27B25460FE600D1D09B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF27A25460FE600D1D09B /* SceneDelegate.swift */; };
 		933EF27D25460FE600D1D09B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF27C25460FE600D1D09B /* ViewController.swift */; };
@@ -30,11 +30,10 @@
 		93CD6FA2255649CD004B2442 /* DynamicMenu2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 93CD6FA1255649CD004B2442 /* DynamicMenu2.gif */; };
 		93CD6FC2255765B0004B2442 /* Cats.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CD6FC1255765B0004B2442 /* Cats.xcassets */; };
 		93CD6FC625578DDF004B2442 /* Balls.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93CD6FC525578DDF004B2442 /* Balls.xcassets */; };
-		93CD6FCA255798B9004B2442 /* Meow.wav in Resources */ = {isa = PBXBuildFile; fileRef = 93CD6FC9255798B9004B2442 /* Meow.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9313995B2557B5EA0090061A /* Menus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menus.png; sourceTree = "<group>"; };
+		931399602557C3E50090061A /* Menus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menus.png; sourceTree = "<group>"; };
 		933EF27525460FE600D1D09B /* DynamicMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		933EF27825460FE600D1D09B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		933EF27A25460FE600D1D09B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +58,6 @@
 		93CD6FA1255649CD004B2442 /* DynamicMenu2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DynamicMenu2.gif; sourceTree = "<group>"; };
 		93CD6FC1255765B0004B2442 /* Cats.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cats.xcassets; sourceTree = "<group>"; };
 		93CD6FC525578DDF004B2442 /* Balls.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Balls.xcassets; sourceTree = "<group>"; };
-		93CD6FC9255798B9004B2442 /* Meow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Meow.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +97,6 @@
 				933EF2B72547A5CA00D1D09B /* ViewControllers */,
 				933EF2B22547A4C600D1D09B /* Controllers */,
 				933EF2B52547A55900D1D09B /* Assets */,
-				93CD6FC8255798A2004B2442 /* Sounds */,
 				933EF2B42547A4DE00D1D09B /* Storyboards */,
 			);
 			path = DynamicMenu;
@@ -171,18 +168,10 @@
 			children = (
 				935D2EF9254A157600E2DA5A /* DynamicMenu.gif */,
 				93CD6FA1255649CD004B2442 /* DynamicMenu2.gif */,
-				9313995B2557B5EA0090061A /* Menus.png */,
 				933EF2E1254951CE00D1D09B /* DynamicMenu.png */,
+				931399602557C3E50090061A /* Menus.png */,
 			);
 			path = "GitHub-Images";
-			sourceTree = "<group>";
-		};
-		93CD6FC8255798A2004B2442 /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				93CD6FC9255798B9004B2442 /* Meow.wav */,
-			);
-			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,10 +237,9 @@
 				933EF28225460FE800D1D09B /* Assets.xcassets in Resources */,
 				93CD6FC2255765B0004B2442 /* Cats.xcassets in Resources */,
 				933EF2E2254951CE00D1D09B /* DynamicMenu.png in Resources */,
+				931399612557C3E50090061A /* Menus.png in Resources */,
 				933EF28025460FE600D1D09B /* Main.storyboard in Resources */,
-				9313995C2557B5EA0090061A /* Menus.png in Resources */,
 				93CD6FC625578DDF004B2442 /* Balls.xcassets in Resources */,
-				93CD6FCA255798B9004B2442 /* Meow.wav in Resources */,
 				933EF2DA2549479500D1D09B /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
