@@ -9,11 +9,11 @@ import UIKit
 
 //MARK: - Pick Desired Menu Style
 //       SET menuType FOR MENU DESIGN
-    let menuType = 0 // Corresponds to index number of menuArray
+    let menuType = 6 // Corresponds to index number of menuArray
 
 struct Data {
     
-    let bgColor: UIColor = #colorLiteral(red: 0.6833285689, green: 0.1684392691, blue: 0.09262684733, alpha: 1)
+    let bgColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
     let isShadowOn      = false
     let shadow: CGFloat = 0.0
     
