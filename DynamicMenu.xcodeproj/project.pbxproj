@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		931399612557C3E50090061A /* Menus.png in Resources */ = {isa = PBXBuildFile; fileRef = 931399602557C3E50090061A /* Menus.png */; };
+		931399642557CBB60090061A /* DynamicMenu3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 931399632557CBB60090061A /* DynamicMenu3.gif */; };
 		933EF27925460FE600D1D09B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF27825460FE600D1D09B /* AppDelegate.swift */; };
 		933EF27B25460FE600D1D09B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF27A25460FE600D1D09B /* SceneDelegate.swift */; };
 		933EF27D25460FE600D1D09B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933EF27C25460FE600D1D09B /* ViewController.swift */; };
@@ -34,6 +35,7 @@
 
 /* Begin PBXFileReference section */
 		931399602557C3E50090061A /* Menus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menus.png; sourceTree = "<group>"; };
+		931399632557CBB60090061A /* DynamicMenu3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = DynamicMenu3.gif; sourceTree = "<group>"; };
 		933EF27525460FE600D1D09B /* DynamicMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		933EF27825460FE600D1D09B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		933EF27A25460FE600D1D09B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			children = (
 				935D2EF9254A157600E2DA5A /* DynamicMenu.gif */,
 				93CD6FA1255649CD004B2442 /* DynamicMenu2.gif */,
+				931399632557CBB60090061A /* DynamicMenu3.gif */,
 				933EF2E1254951CE00D1D09B /* DynamicMenu.png */,
 				931399602557C3E50090061A /* Menus.png */,
 			);
@@ -239,6 +242,7 @@
 				933EF2E2254951CE00D1D09B /* DynamicMenu.png in Resources */,
 				931399612557C3E50090061A /* Menus.png in Resources */,
 				933EF28025460FE600D1D09B /* Main.storyboard in Resources */,
+				931399642557CBB60090061A /* DynamicMenu3.gif in Resources */,
 				93CD6FC625578DDF004B2442 /* Balls.xcassets in Resources */,
 				933EF2DA2549479500D1D09B /* LICENSE in Resources */,
 			);
