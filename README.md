@@ -7,11 +7,11 @@
 An example iOS14 app to demo a UIKit Dynamic use of physics for a moving menu. 
 The menu freely moves as device is moved. 
 
-<img src="GitHub-Images/DynamicMenu.gif" width="1200">
+<img src="GitHub-Images/DynamicMenu.gif" width="300">
 
 Menus can be varied by shape, image, color, border, font, size, background color and shadows. 
 
-<img src="GitHub-Images/Menus.png" width="1000">
+<img src="GitHub-Images/Menus.png" width="1200">
 
 Menus are generated from data contained in an array. Each menu item segues to a corresponding view controller of the same name and color.
 
