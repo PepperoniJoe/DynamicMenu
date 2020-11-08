@@ -11,7 +11,7 @@ The menu freely moves as device is moved.
 
 Menus can be varied by shape, image, color, border, font, size, background color and shadows. 
 
-<img src="GitHub-Images/Menus.png" width="1500">
+<img src="GitHub-Images/Menus.png" width="1700">
 
 Menus are generated from data contained in an array. Each menu item segues to a corresponding view controller of the same name and color.
 
