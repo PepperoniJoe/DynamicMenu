@@ -11,6 +11,7 @@ enum ShapeType {
     case circle
     case square
     case roundedSquare
+    case image
 }
 
 enum Font: String {

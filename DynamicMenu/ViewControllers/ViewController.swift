@@ -34,7 +34,7 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let button = sender as? Shape {
             segue.destination.title = button.titleLabel?.text
-            segue.destination.view.backgroundColor = button.backgroundColor
+            segue.destination.view.backgroundColor = button.tintColor
         }
     }
 }  // end of ViewController

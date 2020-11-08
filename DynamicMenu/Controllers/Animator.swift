@@ -13,6 +13,12 @@ class Animator: UIDynamicAnimator  {
     var gravity     : UIGravityBehavior!
     var isSoundOn   : Bool = false
     
+    func addBehaviors(items: [UIView]) {
+        addGravity(items)
+        addCollisionBehavior(items)
+        addItemBehaviors(items)
+    }
+    
     private func addGravity(_ items: [UIView]) {
         gravity = UIGravityBehavior(items: items)
         gravity.magnitude = 1.0
@@ -34,12 +40,6 @@ class Animator: UIDynamicAnimator  {
         itemBehaviour.allowsRotation = true
         itemBehaviour.resistance     = 0.0
         self.addBehavior(itemBehaviour)
-    }
-    
-    func addBehaviors(items: [UIView]) {
-        addGravity(items)
-        addCollisionBehavior(items)
-        addItemBehaviors(items)
     }
 }  // end of Animator
 

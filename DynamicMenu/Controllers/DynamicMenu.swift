@@ -51,9 +51,9 @@ class DynamicMenu {
             
             let shape = Shape(frame: CGRect(x: info.frameX, y: info.frameY, width: info.frameWidth, height: info.frameHeight))
                 .title(info.title, font: info.font.rawValue, fontSize: info.fontSize, titleColor: info.titleColor)
-                .shape(info.shape)
+                .shape(info.shape, imageName: info.imageName)
                 .shadow(data.shadow, isOn: data.isShadowOn)
-                .color(info.shapeColor)
+                .color(info.shapeColor, shape: info.shape)
                 .borderColor(info.borderColor, width: info.borderWidth)
                 .segue(info.segue)
                 .tag(key)
@@ -64,16 +64,16 @@ class DynamicMenu {
         }
     }
     
-    
     //MARK: - Button actions
     
     @objc func selectButton(sender: Shape) {
         let buttonType = data.menuArray[menuType][sender.tag].segue
+
         if buttonType == nil {
             isSoundOn = !isSoundOn
+            animator.isSoundOn = isSoundOn
             let sound = isSoundOn ? " 🔊 " : " 🔈 "
             _ = sender.title( sound , font: Font.plain.rawValue, fontSize: 50, titleColor: UIColor.white)
-            animator.isSoundOn = isSoundOn
         } else {
             disappear()
             delegate?.selectScreen(segue: buttonType, sender: sender)

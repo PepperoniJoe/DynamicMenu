@@ -9,13 +9,13 @@ import UIKit
 
 class Shape: UIButton {
     
-    private var segue: String?
+    var segue: String?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    func shape(_ shape: ShapeType) -> Self {
+    func shape(_ shape: ShapeType, imageName: String?) -> Self {
         
         if shape == .circle {
             layer.cornerRadius = frame.size.height / 2
@@ -27,12 +27,22 @@ class Shape: UIButton {
             clipsToBounds = true
         }
         
+        if shape == .image {
+            if let image = UIImage(named: imageName ?? "blank") {
+                self.setImage(image, for: .normal)
+            }
+            clipsToBounds = true
+        }
+        
         isUserInteractionEnabled = true
         return self
     }
     
-    func color(_ color: UIColor) -> Self {
-        backgroundColor = color
+    func color(_ color: UIColor, shape: ShapeType = .square) -> Self {
+        if shape != .image {
+            backgroundColor = color
+        }
+        tintColor = color
         return self
     }
     
