@@ -9,30 +9,31 @@ import UIKit
 
 //MARK: - Pick Desired Menu Style
 //       SET menuType FOR MENU DESIGN
-    let menuType = 0 // Corresponds to index number of menuArray
+    let menuType = 6 // Corresponds to index number of menuArray
 
 struct Data {
+    //MARK: - Set for Menu
+    let bgColor: UIColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+    let isShadowOn       = false
+    let shadow: CGFloat  = 1.0
     
-    let bgColor: UIColor = #colorLiteral(red: 0.9775069356, green: 0.8521896005, blue: 0.5476524234, alpha: 1)
-    let isShadowOn      = false
-    let shadow: CGFloat = 0.0
-    
+   //MARK: -  Menu Choices
     let menuArray: [[(title: String, segue: String?, shape: ShapeType, imageName: String?, font: Font, fontSize: CGFloat, titleColor: UIColor, shapeColor: UIColor, frameX: Int, frameY: Int, frameWidth: Int, frameHeight: Int, borderColor: UIColor, borderWidth: CGFloat)]] = [
         [
-            ("Supplies", K.one, .circle, nil, .regular, 40, .label, .systemBackground, 10, 0, 220, 60, .label, 1.0),
-            ("Treats",       K.two, .circle, nil, .bold,    40, .label, .systemBackground, 0, 0, 140, 140,     .label, 1.0),
+            ("Supplies",     K.one,   .circle, nil, .regular,  40, .label, .systemBackground, 10, 0, 220, 60, .label, 1.0),
+            ("Treats",       K.two,   .circle, nil, .bold,     40, .label, .systemBackground, 0, 0, 140, 140,     .label, 1.0),
             ("Food",         K.three, .circle, nil, .plain,    60, .label, .systemBackground, 100, 100, 150, 150,   .label, 1.0),
-            ("Toys",         K.four, .circle, nil, .bold,    45, .label, .systemBackground, 0, 400, 110, 110,   .label, 1.0),
-            ("Carriers",     K.four, .circle, nil, .regular,    40, .label, .systemBackground, 0, 400, 200, 90,   .label, 1.0),
-            ("Litter", K.four, .circle, nil, .regular,    50, .label, .systemBackground, 0, 400, 220, 80,   .label, 1.0),
-            ("Beds/Towers",     K.four, .circle, nil, .plain,    25, .label, .systemBackground, 0, 400, 200, 60,   .label, 1.0),
-            ("Flea and Tick",     K.four, .circle, nil, .regular,    25, .label, .systemBackground, 50, 50, 200, 60,   .label, 1.0),
-            ("Cat Songs",    K.one, .image,  "Cat1", .plain, 12, .label, #colorLiteral(red: 0.6546350121, green: 0.4760367274, blue: 0.5770899057, alpha: 1), 0, 400, 106, 154, .label, 0.0),
-            ("Cat Poems",    K.one, .image,  "Cat2", .plain, 12, .label, #colorLiteral(red: 0.9770404696, green: 0.4807606339, blue: 0.460550487, alpha: 1), 0, 160, 119, 131, .label, 0.0),
-            ("Cat Drawings", K.one, .image,  "Cat3", .plain, 12, .label, #colorLiteral(red: 0.5610517859, green: 0.546002686, blue: 0, alpha: 1), 200, 160, 119, 131, .label, 0.0),
-            ("Cat Memes",    K.one, .image,  "Cat4", .plain, 12, .label, #colorLiteral(red: 0, green: 0.5649836659, blue: 0.5651857257, alpha: 1), 200, 0, 154, 142, .label, 0.0),
-            ("Cats Photos",  K.one, .image,  "Cat5", .plain, 12, .label, #colorLiteral(red: 0.8920195699, green: 0.3525260091, blue: 0.6284474134, alpha: 1), 0, 0, 106, 154, .label, 0.0),
-            ("Cat Videos",   K.one, .image,  "Cat6", .plain, 12, .label, #colorLiteral(red: 0.9548518062, green: 0.7142229676, blue: 0, alpha: 1), 200, 320, 154, 142, .label, 0.0),
+            ("Toys",         K.four,  .circle, nil, .bold,     45, .label, .systemBackground, 0, 400, 110, 110,   .label, 1.0),
+            ("Carriers",     K.four,  .circle, nil, .regular,  40, .label, .systemBackground, 0, 400, 200, 90,   .label, 1.0),
+            ("Litter",       K.four,  .circle, nil, .regular,  50, .label, .systemBackground, 0, 400, 220, 80,   .label, 1.0),
+            ("Beds/Towers",  K.four,  .circle, nil, .plain,    25, .label, .systemBackground, 0, 400, 200, 60,   .label, 1.0),
+            ("Flea and Tick", K.four, .circle, nil, .regular,  25, .label, .systemBackground, 50, 50, 200, 60,   .label, 1.0),
+            ("Cat Songs",    K.one,   .image,  "Cat1", .plain, 12, .label, #colorLiteral(red: 0.6546350121, green: 0.4760367274, blue: 0.5770899057, alpha: 1), 0, 400, 106, 154, .label, 0.0),
+            ("Cat Poems",    K.one,   .image,  "Cat2", .plain, 12, .label, #colorLiteral(red: 0.9770404696, green: 0.4807606339, blue: 0.460550487, alpha: 1), 0, 160, 119, 131, .label, 0.0),
+            ("Cat Drawings", K.one,   .image,  "Cat3", .plain, 12, .label, #colorLiteral(red: 0.5610517859, green: 0.546002686, blue: 0, alpha: 1), 200, 160, 119, 131, .label, 0.0),
+            ("Cat Memes",    K.one,   .image,  "Cat4", .plain, 12, .label, #colorLiteral(red: 0, green: 0.5649836659, blue: 0.5651857257, alpha: 1), 200, 0, 154, 142, .label, 0.0),
+            ("Cats Photos",  K.one,   .image,  "Cat5", .plain, 12, .label, #colorLiteral(red: 0.8920195699, green: 0.3525260091, blue: 0.6284474134, alpha: 1), 0, 0, 106, 154, .label, 0.0),
+            ("Cat Videos",   K.one,   .image,  "Cat6", .plain, 12, .label, #colorLiteral(red: 0.9548518062, green: 0.7142229676, blue: 0, alpha: 1), 200, 320, 154, 142, .label, 0.0),
         ],
         [
             ("Play",     K.one,   .circle,        nil, .regular, 80, .label, #colorLiteral(red: 0.9366931319, green: 0.5399537086, blue: 0.6667494178, alpha: 1), 100, 100, 250, 250, .label, 0.0),
@@ -124,7 +125,7 @@ struct Data {
     ]
 }
 
-
+//MARK: - String Constants
 struct K {
     static var oops  = "Oops"
     static var one   = "One"

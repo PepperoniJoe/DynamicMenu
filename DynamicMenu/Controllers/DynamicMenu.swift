@@ -35,17 +35,17 @@ class DynamicMenu {
     
     //MARK: - SET UP
     
-    func createAnimator(displayView: UIView, backgroundColor: UIColor ) {
+    private func createAnimator(displayView: UIView, backgroundColor: UIColor ) {
         animator = Animator(referenceView: displayView)
         animator.referenceView?.backgroundColor = backgroundColor
     }
     
-    func addMotionDetection() {
+    private func addMotionDetection() {
         motionManager = CMMotionManager()
         motionManager.startAccelerometerUpdates()
     }
     
-    func createShapes(displayView: UIView, menuType: Int) {
+    private func createShapes(displayView: UIView, menuType: Int) {
         
         for (key, info) in data.menuArray[menuType].enumerated() {
             
@@ -83,7 +83,7 @@ class DynamicMenu {
     
     //MARK: - Timer methods to move shapes
     
-    func createTimer(time: Double, shouldRepeat: Bool) {
+    private func createTimer(time: Double, shouldRepeat: Bool) {
         timer = Timer.scheduledTimer(timeInterval: time, target: self, selector: #selector(update), userInfo: nil, repeats: shouldRepeat)
     }
     

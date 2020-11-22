@@ -52,12 +52,12 @@ class Shape: UIButton {
         return self
     }
     
-    func shadow(_ shadowHeight: CGFloat, isOn: Bool) -> Self {
+    func shadow(_ shadow: CGFloat, isOn: Bool) -> Self {
         if isOn == true {
-            clipsToBounds       = false
+            layer.masksToBounds = false
             layer.shadowColor   = UIColor.black.cgColor
-            layer.shadowOffset  = CGSize(width : 0.0, height : shadowHeight)
-            layer.shadowOpacity = 0.6
+            layer.shadowOffset  = CGSize(width : shadow, height : shadow)
+            layer.shadowOpacity = 1.0
         }
         return self
     }
